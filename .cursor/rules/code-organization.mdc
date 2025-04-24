@@ -1,0 +1,25 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# Code Organization
+
+## Architecture
+The fetch worker is organized into logical components:
+
+- **Entry Point**: [src/index.ts](mdc:src/index.ts) - Sets up the worker and routes requests
+- **Request Handler**: [src/handlers/requestHandler.ts](mdc:src/handlers/requestHandler.ts) - Processes incoming requests 
+- **Fetch Executor**: [src/handlers/fetchExecutor.ts](mdc:src/handlers/fetchExecutor.ts) - Executes fetch requests using provided configuration
+- **Utilities**: [src/utils/corsHeaders.ts](mdc:src/utils/corsHeaders.ts) - Common utilities like CORS headers
+
+## Flow
+1. Request received at the worker
+2. Request validated and parsed
+3. Fetch operation executed using the provided configuration
+4. Response formatted and returned with appropriate CORS headers
+
+## Development Tips
+- Add new utilities in the [src/utils/](mdc:src/utils/) directory
+- Extend handler functionality in [src/handlers/](mdc:src/handlers/)
+- Configure worker settings in [wrangler.jsonc](mdc:wrangler.jsonc)

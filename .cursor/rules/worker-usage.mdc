@@ -1,0 +1,49 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# Fetch Worker Usage
+
+This worker accepts fetch-compatible JSON payloads and executes them. It's useful for debugging fetch requests from Cloudflare Workers.
+
+## Example Usage
+
+```javascript
+// Example request to the worker
+const response = await fetch('https://fetch-worker.your-subdomain.workers.dev/', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    url: 'https://api.example.com/data',
+    method: 'GET',
+    headers: {
+      'Authorization': 'Bearer YOUR_TOKEN'
+    }
+  })
+});
+
+const result = await response.json();
+console.log(result);
+```
+
+## Response Format
+
+The worker returns a standardized JSON response:
+
+```json
+{
+  "success": true,
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "content-type": "application/json",
+    // ... other headers
+  },
+  "data": {
+    // Response data from the target API
+  }
+}
+```
