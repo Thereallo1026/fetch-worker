@@ -1,6 +1,4 @@
-# Fetch Worker
-
-A Cloudflare Worker that acts as a fetch API proxy/debugger. It accepts JSON in fetch format, executes the actual request, and returns the response. This is particularly useful for debugging fetch requests from Cloudflare Workers or testing API endpoints.
+![banner](https://github.com/user-attachments/assets/f029fbe4-eb13-44bf-a9dc-04786f42442a)
 
 ## Features
 
