@@ -1,4 +1,4 @@
-![banner](https://github.com/user-attachments/assets/f029fbe4-eb13-44bf-a9dc-04786f42442a)
+![Fetch Worker](https://github.com/user-attachments/assets/7e25d3d9-55f1-400d-b2bd-383b2367fa8b)
 
 ## Features
 
