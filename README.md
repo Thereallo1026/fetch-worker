@@ -1,5 +1,7 @@
 ![Fetch Worker](https://github.com/user-attachments/assets/7e25d3d9-55f1-400d-b2bd-383b2367fa8b)
 
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https%3A%2F%2Fgithub.com%2FThereallo1026%2Ffetch-worker)
+
 ## Features
 
 - Execute fetch requests using JSON configuration
